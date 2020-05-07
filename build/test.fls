@@ -1,0 +1,63 @@
+PWD b:\JVG\LaTeX\jvg-latex
+INPUT C:\Users\Javier\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT b:\JVG\LaTeX\jvg-latex\test.tex
+OUTPUT b:\JVG\LaTeX\jvg-latex\build\test.log
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk10.clo
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk10.clo
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-spanish\spanish.ldf
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-spanish\spanish.ldf
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.def
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT b:\JVG\LaTeX\jvg-latex\build\test.aux
+INPUT b:\JVG\LaTeX\jvg-latex\build\test.aux
+OUTPUT b:\JVG\LaTeX\jvg-latex\build\test.aux
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+OUTPUT b:\JVG\LaTeX\jvg-latex\build\test.pdf
+INPUT C:\Users\Javier\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmcsc10.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsl10.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT b:\JVG\LaTeX\jvg-latex\build\test.toc
+INPUT b:\JVG\LaTeX\jvg-latex\build\test.toc
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
+OUTPUT b:\JVG\LaTeX\jvg-latex\build\test.toc
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT b:\JVG\LaTeX\jvg-latex\build\test.aux
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsl10.pfb
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsl10.pfb
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\Javier\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
