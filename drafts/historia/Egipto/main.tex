@@ -1,0 +1,52 @@
+%-------------------------%
+%-----Document Setup------%
+%-------------------------%
+\documentclass[a4paper,12pt,openany]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[left=3cm, right=2cm, top=2.5cm, bottom=3cm]{geometry}
+%\usepackage{savetrees}
+\usepackage{verbatim}
+\linespread{1.6}
+%\setlength{\footskip}{20pt}
+\usepackage{graphicx}
+
+
+%-------------------------%
+%------Document Code------%
+%-------------------------%
+\newcommand{\thought}[1]{\textit{#1}}
+
+\newcommand{\scenechange}{
+  \par
+  \vspace{\baselineskip}
+  \par
+\noindent}
+%Creates a line break for a change of scene
+
+\newcommand{\majorchange}{
+  \par
+  \vspace{\baselineskip}
+  \hfill
+  \textasteriskcentered
+  \hfill
+  \vspace{\baselineskip}
+\noindent}
+%creates a major line break, split by an asterisk for scene changes at the end of a page of where a sense of a major change is required. 
+
+%-------------------------%
+%------Main Document------%
+%-------------------------%
+\begin{document}
+%\title{China}
+%\date{}
+%\maketitle
+\section*{Egipto}
+\subsection*{Cultura y sociedad}
+\input{section1.tex}
+%add additional sections by creating new section#.tex files and copying the two lines above. You can number sections (remove the asterisks) or name them (in the curly braces) or even use chapters instead. Ooo, and don't forget you can do parts too!
+
+\subsection*{Matemática y sus aplicaciones}
+\input{section2.tex}
+
+\end{document}

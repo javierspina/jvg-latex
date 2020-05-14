@@ -1,0 +1,53 @@
+\section{Mediciones por generador}
+\begin{frame}
+\frametitle{Trabajo práctico grupal}
+
+\begin{columns}[t]
+		\column{0.5\textwidth}
+
+Transceptor digital de sonido: consiste en un sistema capaz de digitalizar una señal de audio y transmitirla por medio de una interfaz UART. A la vez el sistema debe ser capaz de recibir datos digitales de audio, convertirlos a analógicos y reproducirlos por un parlante.
+		
+		\column{0.5\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.3]{diag1}	
+		\end{figure}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+La etapa de micrófono consiste en un micrófono en si, un amplificador operacional (LM324) y un filtro RC de segundo orden.
+
+
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+
+     Se puede observar la deformación de la onda con un filtro de primer orden.
+
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=.8\linewidth]{rcprimerorden}
+    \end{column}
+  \end{columns}
+
+Con la implementación de un filtro de segundo orden se logró evitar estas deformaciones en la salida, así como también una mejor atenuación de la respuesta en frecuencia, conservando los niveles de ganancia (debido al seguidor de tensión).
+\end{frame}
+
+
+\begin{frame}
+
+La placa de desarrollo se utiliza en tres facetas importantes
+\begin{itemize}
+
+\item Transmisión y recepción via UART: Establece la comunicación con otro transceptor.
+
+\item Conversor analógico-digital: la señal que se recibe de la etapa de micrófono se muestra al doble de frecuencia de corte del filtro anterior inmediato.
+
+\item PWM: Al recibir una señal digital del exterior, se recrea la señal analógica mediante la modificación del ancho de pulso PWM, mediante el valor medio de la señal. A la salida se coloca un filtro RC para no trabajar con frecuencias inutiles.
+
+
+\end{itemize}
+
+La etapa de parlante consiste en un amplificador de potencia y un parlante en si.
+
+\end{frame}

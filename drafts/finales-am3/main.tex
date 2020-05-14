@@ -1,0 +1,118 @@
+\documentclass[9pt,a4paper]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[top=0.25in, bottom=0.25in, left=0.4in, right=0.4in]{geometry}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+
+%letra en arial
+%\usepackage{helvet}
+%\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+\newcommand{\plus}{\scalebox{0.6}{$+$}}
+
+\begin{document}
+\pagenumbering{gobble}
+\hrule
+\center{Final de Análisis Matemático III}
+%\center {3/10/2017}
+\begin{enumerate}
+
+
+    \item Hallar la solución particular de la siguiente ecuación diferencial $$y' -2y=e^t / y(0)=1$$
+    \begin{enumerate}
+        \item Resolver por la transformada de Laplace
+        \item Resolver por otro método distinto
+    \end{enumerate}
+    
+    \item Calular, si existe, el siguiente límite. $$\lim_{z \to 0} \dfrac{\Bar{z}+iz^2}{|z|}$$
+    
+    \item Realizar la transformación y graficar ambas en planos superpuestos:
+    \begin{enumerate}
+        \item $|z-2i|=2$ mediante $\dfrac{1}{z}$
+        \item $(\Re[z]-1)^2 +(\Im[z]+2)^2 = 4$ mediante $w=3z-2i$
+    \end{enumerate}
+    
+    \item Calcular la siguiente integral a partir de los teoremas de integración
+    $$\oint_{C^{\plus}} \dfrac{z^4+i}{z-i}^3 dz$$
+    
+    \item Hallar el desarrollo por serie de Laurent de $\dfrac{1}{z^3 (1-z^2)}$ indicando centro de convergencia y residuo. Luego, calcular la integral para la curva $C: |z|=\dfrac{1}{2}$
+
+    
+    \item  (Teórico) Condición necesaria y suficiente para la existencia de la derivada y la expresión de la derivada.
+    \item (Teórico) Pruebe que en una transformación inversa las rectas y las circunferencias se transformen en rectas y circunferencias.
+\end{enumerate}
+\hrule
+
+\center{Final de Análisis Matemático III}
+%\center {3/10/2017}
+\begin{enumerate}
+    \item Etudiar la continuidad de la siguiente función
+    $$
+     f(z) = \left\{
+	       \begin{array}{cc}
+		 \dfrac{z^2-|z|}{\Bar{z}}      & \mathrm{si\ } z \neq 0 \\
+		 &\\
+		 0     & \mathrm{si\ } z = 0
+	       \end{array}
+	     \right.
+$$
+\item Hallar la solución particular de la ecuación diferencial $y' -4y=x$ tal que $y(0)=0$, mediante
+\begin{enumerate}
+    \item Transformada de Laplace.
+    \item otro método distinto
+\end{enumerate}
+
+\item Hallar la conjugada armónica de $v(x,y)=2xy-x$ tal que $v(x,y)=\Im[f(z)]$ sabiendo que $f(i)=2$. Descubrir su conjunto de ceros.
+
+\item Calcular la siguiente integral
+$$
+\oint_{C^{\plus}} \dfrac{cos(z-\pi)}{z^2(z-\pi)} dz
+$$
+\begin{enumerate}
+    \item con $C: |z|=1$
+    \item con $C: |z-4|=2$
+\end{enumerate}
+\item Hallar el desarrollo por serie de Laurent de $f(z)=(z-1)e^{\frac{1}{z-1}}$ con $z_0 =1$ y luego calcular la integral
+\item \begin{enumerate}
+    \item Demostrar que una transformación por inversión transforma rectas y circunferencias, en rectas y circunferencias.
+    \item Enunciar los pasos para realizar una transformación bilineal.
+\end{enumerate}
+\item \begin{enumerate}
+    \item Enunciar la expresión de la derivada, a través de las ecuacions de Cauchy-Riemann en coordenadas polares.
+    \item Demostrar que la integral de una función analítica a lo largo de una trayectoria abierta es independiente de dicha trayectoria, siempre que $f$ se mantenga analítica entre la curva dada y la elegida.
+\end{enumerate}
+\end{enumerate}
+\hrule
+
+\newpage
+\hrule
+
+\center{Final de Análisis Matemático III}
+%\center {3/10/2017}
+\begin{enumerate}
+\item Hallar la solución particular de la ecuación diferencial $y' +y=e^{-2t}$ tal que $y(0)=0$, mediante
+\begin{enumerate}
+    \item Transformada de Laplace.
+    \item otro método distinto
+\end{enumerate}
+
+\item Desarrollar $g(z)=\dfrac{4}{z^2(1+z)}$ en $z_0 =0$ e indicar campo de convergencia. Hallar, mediante el teorema de los residuios, $\displaystyle \oint_{C^{\plus}} g(z)dz$ con $C: |z|=\dfrac{1}{8}$
+
+\item Hallar el transformado de $\Re[z-1]+\Im[z+i]=2$ a través de $w=z^{-1}$. Graficar.
+
+\item Sea $v(x,y)=6xy+2y$ tal que $v(x,y)=\Im[f(z)]$, hallar $f'(z)$
+
+\item Hallar la integral $\displaystyle \oint_{C^{\plus}} \dfrac{5dz}{(z+2i)(z-i)}$ con $C: |z|=\dfrac{3}{2}$. ¿Qué pasaría si $C: |z|=\dfrac{1}{2}$?
+
+\item Demostrar que Laplace es un operador lineal
+
+\item Enunciar las ecuaciones de Cauchy-Riemann en coordenadas polares
+
+\item Deducir alguna ecuación diferencial de primer orden.
+
+\end{enumerate}
+\hrule
+
+\end{document}

@@ -1,0 +1,363 @@
+\documentclass[9pt,a4paper]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[top=0.25in, bottom=0.25in, left=0.4in, right=0.2in]{geometry}
+\usepackage{amsmath, amssymb, amsfonts}
+
+%letra en arial
+%\usepackage{helvet}
+%\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+
+\begin{document}
+\pagenumbering{gobble}
+\center{ISP JVG - Análisis Matemático II - A. García Venturini}
+\center {16 de noviembre de 2011 - Recuperatorio del primer parcial}
+\begin{enumerate}
+    \item Dada la serie 
+    \[
+    \sum_{n=1}^{\infty}\dfrac{(-1)^{n+1}}{n^{2}+1}
+    \]
+    \begin{enumerate}
+    \item analizar si es convergente
+    \item de serlo, determinar si la convergencia es absoluta o condicional
+    \item hallar el valor aproximado de su suma si se considera la suma parcial de orden 4
+    \item acotar el error que se comete
+    \end{enumerate}
+    
+    
+    \item Dado el campo escalar, determinar
+    \[
+    f(x;y)= \sqrt{36-x^{2}-4y^{2}} \ln{(x^2 + y^2 - 1)}
+    \]
+
+    \begin{enumerate}
+        \item gráfica y analíticamente el dominio $D$
+        \item los conjuntos $D_i$, $D_e$, $D_f$ y $D'$
+        \item si el conjunto es abierto, cerrado, denso, perfecto. Justificar.
+    \end{enumerate}
+    
+    
+    \item Analizar continuidad y derivabilidad en el origen de la siguiente función. Justificar.    
+    \[
+    f(x;y)= \left\{ \begin{array}{lcc}
+             \dfrac{x^3 + y^3}{x^2 + y^2} &   si  & (x;y) \neq (0;0) \\
+             \\ 0 &  si & (x;y) = (0;0)
+             \end{array}
+   \right.
+    \]
+    
+    \item Si denotamos con\[ h(x;y)=2e^{-x^2}+e^{-3y^2}\] la altura de una montaña en la posición (x;y). ¿En qué dirección y sentido desde (1;0) se debe comenzar a caminar para escalar lo más rápido posible?
+    
+    
+    \item Decidir si los siguientes enunciados son verdaderos o falsos. Justificar con presición.
+    \begin{enumerate}
+        \item Una función derivable en un punto, es continua en ese punto.
+        \item Las derivadas segundas cruzadas son iguales.
+    \end{enumerate}
+\end{enumerate}
+\hrule
+\center {3 de julio de 2013 - Primera evaluación parcial}
+\begin{enumerate}
+     \item Dada la serie 
+    \[
+    \sum_{n=1}^{\infty}\dfrac{(-1)^{n+1}}{4n+1}
+    \]
+    \begin{enumerate}
+    \item analizar la convergencia absoluta y condicional
+    \item aproximar por truncamiento de orden 4 la suma S
+    \end{enumerate}
+    
+    
+    \item Dado el campo escalar, determinar
+    \[
+    f(x;y)= \dfrac{\ln{(-x^2-y)}}{\sqrt{2-x^2-y^2}}
+    \]
+    
+    \begin{enumerate}
+        \item gráfica y analíticamente el dominio $D$
+        \item determinar si el conjunto es perfecto. Justificar.
+    \end{enumerate}
+    
+    
+   \item Analizar en todo $ {\mathbb{R}}^2 $ la continuidad y derivabilidad de la siguiente función. Justificar.
+   
+    \[
+    f(x;y)= \left\{ \begin{array}{lcc}
+             \dfrac{x^3 + 4y^3}{x^2 + y^2} &   si  & (x;y) \neq (0;0) \\
+             \\ 0 &  si & (x;y) = (0;0)
+             \end{array}
+   \right.
+    \]
+    
+    \item Dado el campo escalar \[ f(x;y)=x^2y^3 \] 
+    \begin{enumerate}
+         \item demostrar, utilizando la definición, que es diferenciable en todo su dominio
+         \item hallar la derivada direccional en $P_0 (2;1)$ en la dirección y sentido de la curva $ y=x^2-2x$ en $x_0=1$
+         \item determinar dirección, sentido de la derivada direccional nula
+         \item hallar por aproximación lineal $f(1,8;1,1)$
+    \end{enumerate}
+    
+    
+    \item Decidir si los siguientes enunciados son verdaderos o falsos. Justificar con presición.
+    \begin{enumerate}
+         \item La serie de potencias que se obtiene de integrar una serie de potencias, conserva el intervalo de convergencia
+         \item Si el límite en coordenadas polares da cero, entonces el límite doble puede o no existir.
+    \end{enumerate}
+\end{enumerate}
+
+\newpage
+\center {6 de julio de 2011 - Primera evaluación parcial - Tema I}
+
+\begin{enumerate}
+     \item Dada la serie 
+    \[
+    \sum_{n=1}^{\infty}\dfrac{(-1)^{n+1}}{n^2+3}
+    \]
+    \begin{enumerate}
+    \item analizar si es convergente
+    \item de serlo, determinar si la convergencia es absoluta o condicional
+    \item hallar el valor aproximado de su suma si se considera la suma parcial de orden 4
+    \item acotar el error que se comete
+    \end{enumerate}
+    
+    
+    \item Dado el campo escalar, determinar
+    \[
+    f(x;y)= \dfrac{\sqrt{4-x^2-y^2}}{\ln{(x+y-2)}}
+    \]
+    
+    \begin{enumerate}
+        \item gráfica y analíticamente el dominio $D$
+        \item los conjuntos $D_i$, $D_e$, $D_f$ y $D'$
+        \item si el conjunto es abierto, cerrado, denso, perfecto. Justificar.
+    \end{enumerate}
+    
+    
+    
+    \item Analizar la continuidad y derivabilidad de la siguiente función en el origen. Justificar.
+   
+    \[
+    f(x;y)= \left\{ \begin{array}{lcc}
+             \dfrac{x^3}{x + 5y} &   si  & x \neq -5y \\
+             \\ 0 &  si & x = -5y
+             \end{array}
+   \right.
+    \]
+    
+    \item Dado el campo escalar \[ f(x;y;z)=x^2+5xy+2z^2 \] 
+    \begin{enumerate}
+         \item hallar una derivada direccional en $P_0 (2;1;1)$ en la dirección paralela a la de la recta $(x;y;z)=(1+2\alpha;2-\alpha;1-3\alpha)$
+         \item determinar dirección, sentido y valor de las derivadas direccionales máxima y mínima en $P_0$
+         \item ¿Existe $\alpha / {f'}_{\alpha}(P_0)=20$? 
+    \end{enumerate}
+    
+    \item Decidir si los siguientes enunciados son verdaderos o falsos. Justificar con presición.
+    \begin{enumerate}
+         \item El teorema de Schwarz establece que las derivadas segundas cruzadas son iguales
+         \item Al derivar una serie de potencias, se conserva el intevalo de convergencia.
+    \end{enumerate}
+\end{enumerate}
+
+\hrule
+\center {4 de julio de 2012 - Primera evaluación parcial - Tema II}
+
+\begin{enumerate}
+    \item Encontrar el intervalo de convergencia de la serie
+    \[
+    \sum^\infty_{n=1} \dfrac{{(x+1)}^n}{n4^n}
+    \]
+    
+    
+    \item Dado el campo escalar, determinar
+    
+    \[
+    f(x;y)= \dfrac{\arccos(x^2+y^2-3)}{\sqrt{x^2+y^2+4}}
+    \]
+    
+    \begin{enumerate}
+        \item gráfica y analíticamente el dominio $D$
+        \item los conjuntos $D_i$, $D_e$, $D_f$ y $D'$
+        \item si el conjunto es abierto, cerrado, denso, perfecto. Justificar.
+    \end{enumerate}
+    
+    
+    \item Analizar en todo ${\mathbb{R}}^2$ la continuidad, derivabilidad y diferenciabilidad de la siguiente función. Justificar.
+    
+    \[
+    f(x;y)= \left\{ \begin{array}{lcc}
+             \dfrac{x^4 + 4y^2}{x^2 + y^2} &   si  & (x;y) \neq (0;0) \\
+             \\ 0 &  si & (x;y) = (0;0)
+             \end{array}
+   \right.
+    \]
+    
+    \item Dado el campo escalar $f(x;y)=x^2+5xy-2y^2$, 
+    \begin{enumerate}
+        \item hallar la derivada direccional en $P_0 (2;1)$ en la dirección máxima y sentido hacia el punto $P (-1;5)$
+        \item determinar dirección, sentido y valor de las derivadas direccionales máxima y mínima en $P_0$
+        \item calcular por aproximación lineal $f(1,9;1,2)$
+    \end{enumerate}
+    
+    \item Decidir si los siguientes enunciados son verdaderos o falsos
+    \begin{enumerate}
+        \item Si una serie alternada es condicionalmente convergente, entonces es convergente
+        \item Un conjunto de puntos denso puede ser denso
+    \end{enumerate}
+    
+\end{enumerate}
+
+
+\newpage
+\center {4 de julio de 2012 - Primera evaluación parcial - Tema I}
+
+
+\begin{enumerate}
+    \item Dada la serie
+    \[
+    \sum^\infty_{n=1} \dfrac{(-1)^{n+1}}{n^2+4n+2}
+    \]
+    \begin{enumerate}
+        \item analizar si es convergente
+        \item de serlo, determinar si la convergencia es absoluta o condicional
+        \item hallar el valor aproximado de su suma si se considera la suma parcial de orden 4
+        \item acotar el error que se comete
+    \end{enumerate}
+    
+    \item Dado el campo escalar, determinar
+    
+    \[
+    f(x;y)= \dfrac{\arcsin(x^2+y^2-3)}{\ln{(x^2+y^2+4)}}
+    \]
+    
+    \begin{enumerate}
+        \item gráfica y analíticamente el dominio $D$
+        \item los conjuntos $D_i$, $D_e$, $D_f$ y $D'$
+        \item si el conjunto es abierto, cerrado, denso, perfecto. Justificar.
+    \end{enumerate}
+    
+    
+    \item Analizar la continuidad, derivabilidad y diferenciabilidad de la siguiente función en el origen. Justificar.
+    
+    \[
+    f(x;y)= \left\{ \begin{array}{lcc}
+             \dfrac{x^3 - 2y^4}{x^2 + y^2} &   si  & (x;y) \neq (0;0) \\
+             \\ 0 &  si & (x;y) = (0;0)
+             \end{array}
+   \right.
+    \]
+    
+    \item Dado el campo escalar $f(x;y)=x^2y+4y^2x^2$, 
+    \begin{enumerate}
+        \item hallar una derivada direccional en $P_0 (-1;1)$ en la dirección del punto $P (3;5)$
+        \item determinar dirección, sentido y valor de las derivadas direccionales máxima y mínima en $P_0$
+        \item calcular por aproximación lineal $f(-0,9;1,2)$
+    \end{enumerate}
+    
+    \item Decidir si los siguientes enunciados son verdaderos o falsos
+    \begin{enumerate}
+        \item Hay campos escalares de dos variables derivables que son continuos
+        \item Una serie de potencias siempre converge a la imagen de una función
+    \end{enumerate}
+    
+\end{enumerate}
+
+\hrule
+\center {6 de julio de 2011 - Primera evaluación parcial - Tema II}
+
+\begin{enumerate}
+     \item Determinar el intervalo de convergencia de la serie 
+     \[ \sum^\infty_{n=0} {(-1)}^n \dfrac{{(3x-2)}^n}{5^n}
+     \]
+    
+    
+    \item Dado el campo escalar, determinar
+    \[
+    f(x;y)= \dfrac{\sqrt{1-x^2-\sfrac{y^2}{4}}}{\ln{(2x-y-2)}}
+    \]
+    
+    \begin{enumerate}
+        \item gráfica y analíticamente el dominio $D$
+        \item los conjuntos $D_i$, $D_e$, $D_f$ y $D'$
+        \item si el conjunto es abierto, cerrado, denso, perfecto. Justificar.
+    \end{enumerate}
+    
+    
+    
+    \item Analizar la continuidad y derivabilidad de la siguiente función en el origen. Justificar.
+   
+    \[
+    f(x;y)= \left\{ \begin{array}{lcc}
+             \dfrac{x^2}{2x + y} &   si  & y \neq -2x \\
+             \\ 0 &  si & y = -2x
+             \end{array}
+   \right.
+    \]
+    
+    \item Dado el campo escalar \[ f(x;y;z)=2z^2-4xy+x^3 \] 
+    \begin{enumerate}
+         \item hallar una derivada direccional en $P_0 (1;2;-1)$ en la dirección paralela a la de la recta $(x;y;z)=(2+3\alpha;1-\alpha;2-2\alpha)$
+         \item determinar dirección, sentido y valor de las derivadas direccionales máxima y mínima en $P_0$
+         \item ¿Existe $\alpha / {f'}_{\alpha}(P_0)=15$? 
+    \end{enumerate}
+    
+    \item Decidir si los siguientes enunciados son verdaderos o falsos. Justificar con presición.
+    \begin{enumerate}
+         \item Dado un campo escalar $ z=f(x;y) $ se verifica que $ {f'''}_{xxy} = {f'''}_{xyx}$
+         \item Al integrar una serie de potencias, se conserva el intevalo de convergencia.
+    \end{enumerate}
+\end{enumerate}
+
+\newpage
+\center {7 de julio de 2010 - Primera evaluación parcial}
+
+\begin{enumerate}
+    \item Encontrar el intervalo de convergencia de la serie
+    \[
+    \sum^\infty_{n=1} \dfrac{{(x-2)}^n}{n3^n}
+    \]
+    
+    
+    \item Dado el campo escalar, determinar
+    
+    \[
+    f(x;y)= \dfrac{\arccos(x^2+y^2-3)}{\sqrt{x^2+y^2-4}}
+    \]
+    
+    \begin{enumerate}
+        \item gráfica y analíticamente el dominio $D$
+        \item los conjuntos $D_i$, $D_e$, $D_f$ y $D'$
+        \item si el conjunto es abierto, cerrado, denso, perfecto. Justificar.
+    \end{enumerate}
+    
+    
+    \item Analizar en todo ${\mathbb{R}}^2$ la continuidad y derivabilidad  de la siguiente función. Justificar.
+    
+    \[
+    f(x;y)= \left\{ \begin{array}{lcc}
+             \dfrac{x^3 + {2xy}^2}{x^2 + y^2} &   si  & (x;y) \neq (0;0) \\
+             \\ 0 &  si & (x;y) = (0;0)
+             \end{array}
+   \right.
+    \]
+    
+    \item Dado el campo escalar $f(x;y)=x^2+5xy-2y^2$, 
+    \begin{enumerate}
+        \item hallar la derivada direccional en $P_0 (2;1)$ en la dirección máxima y sentido hacia el punto $P (-1;5)$
+        \begin{enumerate}[(i)]
+            \item por definición
+            \item por vector gradiente
+        \end{enumerate}
+        \item determinar dirección, sentido y valor de las derivadas direccionales máxima y mínima en $P_0$
+    \end{enumerate}
+    
+    \item Decidir si los siguientes enunciados son verdaderos o falsos. Justificar con presición
+    \begin{enumerate}
+        \item Si una serie alternada es condicionalmente convergente, entonces es convergente
+        \item Un conjunto de puntos perfecto ser denso
+    \end{enumerate}
+    
+\end{enumerate}
+
+\end{document}
