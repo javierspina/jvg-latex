@@ -1,0 +1,95 @@
+%-------------------------%
+%-----Document Setup------%
+%-------------------------%
+\documentclass[a4paper,12pt,openany]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[left=3cm, right=2cm, top=2.5cm, bottom=3cm]{geometry}
+%\usepackage{savetrees}
+\usepackage{verbatim}
+\linespread{1.6}
+%\setlength{\footskip}{20pt}
+\usepackage{graphicx}
+\usepackage{enumitem}
+
+
+%-------------------------%
+%------Document Code------%
+%-------------------------%
+\newcommand{\thought}[1]{\textit{#1}}
+
+\newcommand{\scenechange}{
+  \par
+  \vspace{\baselineskip}
+  \par
+\noindent}
+%Creates a line break for a change of scene
+
+\newcommand{\majorchange}{
+  \par
+  \vspace{\baselineskip}
+  \hfill
+  \textasteriskcentered
+  \hfill
+  \vspace{\baselineskip}
+\noindent}
+%creates a major line break, split by an asterisk for scene changes at the end of a page of where a sense of a major change is required. 
+
+%-------------------------%
+%------Main Document------%
+%-------------------------%
+\begin{document}
+\title{\vspace{-2cm}Grecia}
+\date{}
+\maketitle
+
+\section{Introducción: La razón y el pensamiento en Grecia}
+\input{section1.tex}
+
+\section{Período Clásico (Helénico)}
+\input{section2.tex}
+
+\subsection{Thales de Mileto}
+\input{section3.tex}
+
+\subsection{Pitágoras de Samos}
+\input{section4.tex}
+
+\subsection{Matemática y sociedad}
+\input{section5.tex}
+
+\subsection{Sócrates}
+\input{section6.tex}
+
+\subsection{Platón}
+\input{section7.tex}
+
+\subsection{Aristóteles}
+\input{section8.tex}
+
+\section{Período Alejandrino (Helenístico)}
+\input{section9.tex}
+
+\subsection{Euclides}
+\input{section10.tex}
+
+\subsection{Los temores griegos. Infinitos}
+\input{section11.tex}
+
+\subsection{Diofanto}
+\input{section12.tex}
+
+\subsection{Apolonio}
+\input{section13.tex}
+
+\subsection{Arquímedes de Siracusa}
+\input{section14.tex}
+
+\subsection{Los tres problemas clásicos}
+\input{section15.tex}
+
+\section{Período Grecorromano}
+\input{section16.tex}
+
+
+\end{document}

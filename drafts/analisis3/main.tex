@@ -1,0 +1,303 @@
+%--------------------------------
+%	Paquetes y configuraciones 
+%--------------------------------
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+%\usepackage{showframe}
+\usepackage[margin=1in]{geometry}
+\usepackage{empheq}
+\usepackage[most]{tcolorbox}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{patchplots}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usetikzlibrary{arrows,intersections}
+
+\newtcbox{\mymath}[1][]{
+    nobeforeafter, math upper, tcbox raise base,
+    enhanced, colframe=blue!30!black,
+    colback=blue!30,#1}
+
+
+%\PassOptionsToPackage{svgnames}{xcolor}
+%\usepackage{lipsum}
+\tcbuselibrary{skins,breakable}
+%\usetikzlibrary{shadings,shadows}
+
+%\newenvironment{block}[1]{%
+%    \tcolorbox[beamer,%
+%    noparskip,breakable,
+%    title=#1]}%
+%    {\endtcolorbox}
+
+%----------------------------
+%   Comienzo del documento
+%----------------------------
+
+\begin{document}
+    %\sffamily % Fuente sans serif
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+    
+    %-----------------
+    %   Portada
+    %-----------------
+    
+\begin{titlepage}
+\center
+
+%\includegraphics[scale=0.15]{logo.png}\\[1cm] % Descomentar para usar el logo del JVG
+\includegraphics[scale=0.4]{pin_matematica.jpg}\\[1cm] % Descomentar para usar el logo de Matemática
+\textsc{\Large Instituto Superior del Profesorado}\\[0.3cm]
+\textsc{\LARGE Dr. Joaquín V. González}\\[1cm]
+\textsc{\large Profesorado de Educación Superior en Matemática}\\[0.5cm]
+
+\HRule \\[0.4cm]
+{\huge \bfseries Análisis Matemático III}\\[0.3cm]
+\Large Apuntes de clase\\
+\HRule \\[1.5cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} 
+\large
+\emph{Alumno:}\\
+Javier Spina
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} 
+\large
+\emph{Docente:}\\
+Fabián Nouche
+\end{flushright}
+\end{minipage}\\[3cm]
+
+\vfill
+{\large \today}
+
+\restoregeometry
+\end{titlepage}
+
+\tableofcontents
+\pagebreak
+
+\section{Ecuaciones Diferenciales}
+\subsection{Introducción}
+\paragraph{Problema:}
+Encontrar una curva cuya recta tangente, en cada uno de sus puntos, tenga pendiente igual al doble del cociente entre la ordenada y la abscisa.\\
+
+[inserte gráfico aquí]
+
+Recordamos que:
+
+[inserte gráfico aquí]
+
+\begin{minipage}{0.4\textwidth}
+%\begin{flushleft} 
+$$\tan \alpha = \frac{\overline{OQ}}{\overline{OP}}$$
+$$\tan \alpha =\frac{0-b}{a-0}$$
+\begin{equation} \label{eq:1}
+\tan \alpha = -\frac{b}{a}
+\end{equation}
+%\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+%\begin{flushright} 
+y por otro lado
+$$y = mx + b$$
+$$0 = ma + b$$
+\begin{equation} \label{eq:2}
+m = -\frac{b}{a}
+\end{equation}
+%\end{flushright}
+\end{minipage}
+
+de \ref{eq:1} y \ref{eq:2}
+
+$$ m = \tan \alpha $$
+
+Volviendo al problema:
+
+$$y = mx + b$$
+$$m=2\frac{y}{x}$$
+$$\tan \ alpha = 2\frac{y}{x}$$
+\begin{empheq}[box=\tcbhighmath]{equation}
+    y' = 2 \frac{y}{x}
+\end{empheq}
+
+
+%----------------------
+%   Nota
+%----------------------
+\tcolorbox[beamer,title=Nota]
+\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+$$S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+      = \frac{1}{n}\sum_{i}^{n} X_i$$
+denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+\endtcolorbox
+
+
+
+\begin{empheq}[box=\tcbhighmath]{equation*}
+    c_i = \langle\psi|\phi\rangle
+\end{empheq}
+\begin{empheq}[box=\tcbhighmath]{equation*}
+    S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+      = \frac{1}{n}\sum_{i}^{n} X_i
+\end{empheq}
+
+\tcbset{highlight math style={boxsep=5mm,colback=blue!30!red!30!white}}
+
+\begin{empheq}[box=\tcbhighmath]{equation*}
+    c_i = \langle\psi|\phi\rangle
+\end{empheq}
+
+\begin{empheq}[box=\mymath]{equation*}
+    c_i = \langle\psi|\phi\rangle
+\end{empheq}
+
+\begin{empheq}[box={\mymath[colback=red!30,drop lifted shadow, sharp corners]}]{equation*}
+    c_i = \langle\psi|\phi\rangle
+\end{empheq}
+
+
+\section{Introduction}
+
+Your introduction goes here! Some examples of commonly used commands and features are listed below, to help you get started.
+
+If you have a question, please use the support box in the bottom right of the screen to get in touch. 
+
+\section{Some \LaTeX{} Examples}
+\label{sec:examples}
+
+\subsection{Sections}
+
+Use section and subsection commands to organize your document. \LaTeX{} handles all the formatting and numbering automatically. Use ref and label commands for cross-references.
+
+\subsection{Comments}
+\subsubsection{Whale hello there}
+
+\begin{tikzpicture}
+    \begin{axis}[xmax=9,ymax=9,samples=50,grid=major,xlabel={x axis},ylabel={y axis},title={Linear and Quadratic Functions}]
+    \addplot[blue, ultra thick](x,x*x);
+    \addplot[red, ultra thick](x,x/2);
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture} 
+    \begin{axis}[ xlabel=Cost, ylabel=Error] 
+        \addplot[color=red,mark=x] coordinates {
+        (2,-2.8559703) 
+        (3,-3.5301677) 
+        (4,-4.3050655) 
+        (5,-5.1413136) 
+        (6,-6.0322865) 
+        (7,-6.9675052) 
+        (8,-7.9377747)
+    }; 
+    \end{axis} 
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    \begin{axis}
+    \addplot3[patch,patch refines=3,
+		shader=faceted interp,
+		patch type=biquadratic] 
+    table[z expr=x^2-y^2]
+    {
+        x  y
+        -2 -2
+        2  -2
+        2  2
+        -2 2
+        0  -2
+        2  0
+        0  2
+        -2 0
+        0  0
+    };
+    \end{axis}
+\end{tikzpicture}
+
+\subsection{Tables and Figures}
+
+Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example. You can upload a figure (JPEG, PNG or PDF) using the files menu. To include it in your document, use the includegraphics command as in the code for Figure~\ref{fig:frog} below.
+
+% Commands to include a figure:
+\begin{figure}
+\centering
+\caption{\label{fig:frog}This is a figure caption.}
+\end{figure}
+
+\begin{table}
+\centering
+\begin{tabular}{l|r}
+Item & Quantity \\\hline
+Widgets & 42 \\
+Gadgets & 13
+\end{tabular}
+\caption{\label{tab:widgets}An example table.}
+\end{table}
+
+\subsection{Mathematics}
+
+\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+$$S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+      = \frac{1}{n}\sum_{i}^{n} X_i$$
+denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+
+\subsection{Lists}
+
+You can make lists with automatic numbering \dots
+
+\begin{enumerate}
+\item Like this,
+\item and like this.
+\end{enumerate}
+\dots or bullet points \dots
+\begin{itemize}
+\item Like this,
+\item and like this.
+\end{itemize}
+
+We hope you find write\LaTeX\ useful, and please let us know if you have any feedback using the help menu above.
+\pagebreak
+
+
+En la ecuación de la recta tangente $y = mx + b$ establezco las condiciones del problema:
+\begin{itemize}
+    \item Ordenada al origen $$b$$
+    \item Abscisa al origen: raíz de la recta $$ 0 = mx + b$$
+\end{itemize}
+$$ x = -\frac{b}{m}$$
+Entonces ahora busco que la recta tangente sea tal que \emph{la suma de la ordenada y la abscisa en el origen en un punto genérico sea igual a 2}:
+$$b + (-\frac{b}{m}) = 2 $$
+$$b (1-\frac{1}{m}) = 2$$
+$$ \frac{m-1}{m} = \frac{2}{b} $$
+$$ b = \frac{2m}{m-1} $$
+Reemplazo en $y=mx+b$
+$$ y = mx + \frac{2m}{m-1} $$
+De donde se obtiene
+\begin{equation}
+\label{eq1:1}
+    y(m-1)=m^2 x - mx + 2m
+\end{equation}
+Derivando 
+$$ y'(m-1)=m^2 -m $$
+$$ y'(m-1)=m(m-1) $$
+\begin{equation}
+\label{eq1:2}
+    y' = m
+\end{equation}
+\ref{eq1:2} en \ref{eq1:1}
+$$ y(y'-1)=(y')^2 x - y'x + 2y' $$
+Luego
+$$ x(y')^2-y'(x+y-2)+y = 0 $$
+
+\end{document}

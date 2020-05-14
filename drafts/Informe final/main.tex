@@ -1,0 +1,46 @@
+\documentclass[xcolor={usenames}]{beamer}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+
+%formato de las diapositivas
+\usetheme{Darmstadt}
+\usecolortheme{rose}
+\useoutertheme{shadow}
+\useinnertheme{circles}
+
+%colores
+\definecolor{azul}{RGB}{0,0,255}
+\definecolor{rojo}{RGB}{255,0,0}
+\definecolor{verde}{RGB}{0,255,0}
+\definecolor{naranja}{RGB}{255,175,0}
+\definecolor{violeta}{RGB}{255,0,175}
+
+%formato de la diapo de presentacion
+\title[Informe final]{Placa de desarrollo}
+\author[Carbonaro, Gomez, Spina]{C. Carbonaro \and F. Gómez \and J. Spina}
+\institute[FIUBA]{
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.1]{fiuba} 
+\end{figure}
+Universidad de Buenos Aires\\
+Facultad de ingeniería}
+\date{\today}
+%Logo de la fiuba para todas las diapos
+\pgfdeclareimage[height=1.2cm, width=1.2cm]{logo}{logo}
+\logo{\pgfuseimage{logo}}
+
+%\setbeamertemplate{navigation symbols}{} %quita los simbolos de navegacion
+
+\begin{document}
+
+\frame{\titlepage}
+\include{intro}
+\include{VistaGral}
+\include{placa}
+\include{MedicionesDC}
+\include{MedicionesAC}
+\include{filtro}
+\end{document}

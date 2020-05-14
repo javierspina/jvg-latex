@@ -1,0 +1,64 @@
+%-------------------------%
+%-----Document Setup------%
+%-------------------------%
+\documentclass[a4paper,12pt,openany]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[left=2.8cm, right=1.9cm, top=2.5cm, bottom=2.8cm]{geometry}
+%\usepackage{savetrees}
+\usepackage{verbatim}
+\linespread{1.6}
+%\setlength{\footskip}{20pt}
+\usepackage{graphicx}
+
+
+%-------------------------%
+%------Document Code------%
+%-------------------------%
+\newcommand{\thought}[1]{\textit{#1}}
+
+\newcommand{\scenechange}{
+  \par
+  \vspace{\baselineskip}
+  \par
+\noindent}
+%Creates a line break for a change of scene
+
+\newcommand{\majorchange}{
+  \par
+  \vspace{\baselineskip}
+  \hfill
+  \textasteriskcentered
+  \hfill
+  \vspace{\baselineskip}
+\noindent}
+%creates a major line break, split by an asterisk for scene changes at the end of a page of where a sense of a major change is required. 
+
+%-------------------------%
+%------Main Document------%
+%-------------------------%
+\begin{document}
+%\title{China}
+%\date{}
+%\maketitle
+\section*{Cultura árabe}
+\subsection*{Cultura}
+\input{section1.tex}
+
+\subsection*{Matemática}
+\input{section2.tex}
+
+\subsubsection*{al-Khwarizmi}
+\input{section3.tex}
+
+\subsubsection*{Tabib ibn Quna}
+\input{section4.tex}
+
+\subsubsection*{Omar Kayyam}
+\input{section5.tex}
+
+\subsubsection*{al-Kashi}
+\input{section6.tex}
+
+
+\end{document}
