@@ -1,0 +1,224 @@
+%--------------------------------
+%	Paquetes y configuraciones 
+%--------------------------------
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+%\usepackage{showframe}
+\usepackage[margin=1in]{geometry}
+\usepackage{empheq}
+\usepackage[most]{tcolorbox}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{patchplots}
+
+\newtcbox{\mymath}[1][]{
+    nobeforeafter, math upper, tcbox raise base,
+    enhanced, colframe=blue!30!black,
+    colback=blue!30, boxrule=1pt,#1}
+
+
+%\PassOptionsToPackage{svgnames}{xcolor}
+%\usepackage{lipsum}
+\tcbuselibrary{skins,breakable}
+%\usetikzlibrary{shadings,shadows}
+
+%\newenvironment{block}[1]{%
+%    \tcolorbox[beamer,%
+%    noparskip,breakable,
+%    title=#1]}%
+%    {\endtcolorbox}
+
+%----------------------------
+%   Comienzo del documento
+%----------------------------
+
+\begin{document}
+    %\sffamily % Fuente sans serif
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+    
+    %-----------------
+    %   Portada
+    %-----------------
+    
+    \begin{titlepage}
+        \center
+
+        %\includegraphics[scale=0.15]{logo.png}\\[1cm] % Descomentar para usar el logo del JVG
+        \includegraphics[scale=0.4]{../resources/pinmatematica.jpg}\\[1cm]
+        \textsc{\Large Instituto Superior del Profesorado}\\[0.3cm]
+        \textsc{\LARGE Dr. Joaquín V. González}\\[1cm]
+        \textsc{\large Profesorado de Educación Superior en Matemática}\\[0.5cm]
+        
+        \HRule \\[0.4cm]
+            {\huge \bfseries Educación Sexual Integral}\\[0.3cm]
+            \Large Trabajo Práctico 1\\
+        \HRule \\[1.5cm]
+        
+        \begin{minipage}{0.4\textwidth}
+            \begin{flushleft} 
+                \large
+                \emph{Alumno:}\\
+                Javier Spina
+            \end{flushleft}
+        \end{minipage}
+        ~
+        \begin{minipage}{0.4\textwidth}
+            \begin{flushright} 
+                \large
+                \emph{Docente:}\\
+                Dr. James Smith
+            \end{flushright}
+        \end{minipage}\\[3cm]
+        
+        \vfill
+        {\large \today}
+        
+        \restoregeometry
+    \end{titlepage}
+
+\tableofcontents
+\pagebreak
+
+%----------------------
+%   Nota
+%----------------------
+
+
+\tcolorbox[beamer,title=Nota]
+\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+$$S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+      = \frac{1}{n}\sum_{i}^{n} X_i$$
+denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+\endtcolorbox
+
+
+
+\begin{empheq}[box=\tcbhighmath]{equation*}
+    c_i = \langle\psi|\phi\rangle
+\end{empheq}
+\begin{empheq}[box=\tcbhighmath]{equation*}
+    S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+      = \frac{1}{n}\sum_{i}^{n} X_i
+\end{empheq}
+
+\tcbset{highlight math style={boxsep=5mm,colback=blue!30!red!30!white}}
+
+\begin{empheq}[box=\tcbhighmath]{equation*}
+    c_i = \langle\psi|\phi\rangle
+\end{empheq}
+
+\begin{empheq}[box=\mymath]{equation*}
+    c_i = \langle\psi|\phi\rangle
+\end{empheq}
+
+\begin{empheq}[box={\mymath[colback=red!30,drop lifted shadow, sharp corners]}]{equation*}
+    c_i = \langle\psi|\phi\rangle
+\end{empheq}
+
+
+\section{Introduction}
+
+Your introduction goes here! Some examples of commonly used commands and features are listed below, to help you get started.
+
+If you have a question, please use the support box in the bottom right of the screen to get in touch. 
+
+\section{Some \LaTeX{} Examples}
+\label{sec:examples}
+
+\subsection{Sections}
+
+Use section and subsection commands to organize your document. \LaTeX{} handles all the formatting and numbering automatically. Use ref and label commands for cross-references.
+
+\subsection{Comments}
+\subsubsection{Whale hello there}
+
+\begin{tikzpicture}
+    \begin{axis}[xmax=9,ymax=9,samples=50,grid=major,xlabel={x axis},ylabel={y axis},title={Linear and Quadratic Functions}]
+    \addplot[blue, ultra thick](x,x*x);
+    \addplot[red, ultra thick](x,x/2);
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture} 
+    \begin{axis}[ xlabel=Cost, ylabel=Error] 
+        \addplot[color=red,mark=x] coordinates {
+        (2,-2.8559703) 
+        (3,-3.5301677) 
+        (4,-4.3050655) 
+        (5,-5.1413136) 
+        (6,-6.0322865) 
+        (7,-6.9675052) 
+        (8,-7.9377747)
+    }; 
+    \end{axis} 
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    \begin{axis}
+    \addplot3[patch,patch refines=3,
+		shader=faceted interp,
+		patch type=biquadratic] 
+    table[z expr=x^2-y^2]
+    {
+        x  y
+        -2 -2
+        2  -2
+        2  2
+        -2 2
+        0  -2
+        2  0
+        0  2
+        -2 0
+        0  0
+    };
+    \end{axis}
+\end{tikzpicture}
+
+\subsection{Tables and Figures}
+
+Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example. You can upload a figure (JPEG, PNG or PDF) using the files menu. To include it in your document, use the includegraphics command as in the code for Figure~\ref{fig:frog} below.
+
+% Commands to include a figure:
+\begin{figure}
+\centering
+\caption{\label{fig:frog}This is a figure caption.}
+\end{figure}
+
+\begin{table}
+\centering
+\begin{tabular}{l|r}
+Item & Quantity \\\hline
+Widgets & 42 \\
+Gadgets & 13
+\end{tabular}
+\caption{\label{tab:widgets}An example table.}
+\end{table}
+
+\subsection{Mathematics}
+
+\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+$$S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+      = \frac{1}{n}\sum_{i}^{n} X_i$$
+denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+
+\subsection{Lists}
+
+You can make lists with automatic numbering \dots
+
+\begin{enumerate}
+\item Like this,
+\item and like this.
+\end{enumerate}
+\dots or bullet points \dots
+\begin{itemize}
+\item Like this,
+\item and like this.
+\end{itemize}
+
+We hope you find write\LaTeX\ useful, and please let us know if you have any feedback using the help menu above.
+
+\end{document}
